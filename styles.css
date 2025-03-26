@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: rgb(168, 205, 211);
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.product_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  height: 9rem;
+  width: 100%;
+  gap: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+
+  img {
+    height: 100%;
+    width: 180px;
+    object-fit: cover;
+  }
+
+  p {
+    align-self: center;
+    font-size: 1.3rem;
+    padding: 0 1.6rem;
+  }
+
+  h3 {
+    align-self: center;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+}

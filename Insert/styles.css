@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: rgb(168, 205, 211);
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 1rem;
+  justify-self: center;
+  padding-top: 2rem;
+
+  input {
+    padding: 0.5rem 0.5rem;
+  }
+
+  button {
+    padding: 0.5rem 0.5rem;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .description_input {
+    padding: 0.5rem 0.5rem;
+    height: 10rem;
+  }
+}
+
+.failMessage {
+  justify-self: center;
+  padding-top: 1rem;
+  color: crimson;
+  text-align: center;
+}
+
+.successMessage {
+  justify-self: center;
+  padding-top: 1rem;
+  color: seagreen;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+}
