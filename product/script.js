@@ -5,7 +5,7 @@ const img = document.querySelector("#product_img");
 const deleteBtn = document.querySelector("#delete_btn");
 const productWrapper = document.querySelector("#product_wrapper");
 
-const fetchfactById = async () => {
+const fetchProductById = async () => {
   try {
     const url = new URL(window.location.href);
     const id = url.searchParams.get("productId");
@@ -30,7 +30,7 @@ const buildScreen = (data) => {
 };
 
 const startApp = async () => {
-  const data = await fetchfactById();
+  const data = await fetchProductById();
   buildScreen(data);
 };
 
